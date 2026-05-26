@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "../css/stack.css";
 
 const Stack = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const logos = sectionRef.current?.querySelectorAll(".logo");
+    if (!logos || logos.length === 0) return;
+
+    logos.forEach((logo, i) => {
+      logo.style.setProperty("--delay", `${i * 0.03}s`);
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    logos.forEach((logo) => observer.observe(logo));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div id="stack" className="stack">
+    <div id="stack" className="stack" ref={sectionRef}>
       <img title="React" className="logo" src="logo_react.svg" alt="" />
       <img title="Next" className="logo" src="logo_next.svg" alt="" />
       <img title="JavaScript" className="logo" src="logo_js.svg" alt="" />

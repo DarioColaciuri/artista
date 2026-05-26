@@ -15,11 +15,18 @@
   width: 30rem;
   border-radius: 50rem;
   transition: all 0.5s;
+  box-shadow: 0 0 24px rgba(255, 255, 255, 0.03);
+}
+
+.photo:hover {
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
 }
 
 .text {
   width: 30rem;
   font-family: "Inria Sans", sans-serif;
+  line-height: 1.6;
 }
 
 .container {
@@ -33,6 +40,25 @@
   justify-content: center;
   gap: 3rem;
   font-size: 2rem;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: scale(1.12);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 900px) {
