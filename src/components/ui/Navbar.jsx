@@ -15,6 +15,9 @@ const Navbar = ({ isBackdrop }) => {
           <a href="#stack">stack</a>
         </li>
         <li>
+          <a href="#music">music</a>
+        </li>
+        <li>
           <a href="#about">about</a>
         </li>
       </ul>

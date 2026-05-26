@@ -3,6 +3,7 @@ import Hero from "./components/parts/Hero";
 import Projects from "./components/parts/Projects";
 import Navbar from "./components/ui/Navbar";
 import Stack from "./components/parts/Stack";
+import Music from "./components/parts/Music";
 import About from "./components/parts/About";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Hero />
       <Projects />
       <Stack />
+      <Music />
       <About />
     </>
   );
