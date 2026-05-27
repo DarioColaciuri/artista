@@ -117,6 +117,13 @@
   opacity: 0;
 }
 
+#luz1,
+#luz2,
+#luz3,
+#luz4 {
+  transition: opacity 0.7s ease;
+}
+
 @keyframes moveAcrossScreen {
   from {
     transform: translateX(-100px);

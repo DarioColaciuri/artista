@@ -11,9 +11,9 @@ const Hero = () => {
         const randomOffTime = Math.floor(Math.random() * 5000) + 1000;
         const randomOnTime = Math.floor(Math.random() * 3000) + 4000;
         setTimeout(() => {
-          element.classList.remove("hiddenLight");
+          element.classList.remove("hidden");
           setTimeout(() => {
-            element.classList.add("hiddenLight");
+            element.classList.add("hidden");
             toggleLight();
           }, randomOnTime);
         }, randomOffTime);
