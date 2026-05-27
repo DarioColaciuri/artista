@@ -124,6 +124,31 @@
   transition: opacity 0.7s ease;
 }
 
+.flash-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  background: white;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0;
+}
+
+.flash-overlay.active {
+  animation: lightningFlash 0.3s ease-out;
+}
+
+@keyframes lightningFlash {
+  0% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes moveAcrossScreen {
   from {
     transform: translateX(-100px);

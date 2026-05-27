@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "../css/hero.css";
 
 const Hero = () => {
@@ -23,7 +23,22 @@ const Hero = () => {
     });
   }, []);
 
+  const audioRef = useRef(null);
+  const playThunder = () => {
+    if (!audioRef.current) {
+      audioRef.current = new Audio("thunder.mp3");
+    }
+    audioRef.current.currentTime = 0;
+    audioRef.current.play();
+  };
+
   const handleClick = (event) => {
+    const flash = document.getElementById("flashOverlay");
+    flash.classList.remove("active");
+    void flash.offsetWidth;
+    flash.classList.add("active");
+    playThunder();
+
     const zombie = document.querySelector(".zombie");
     const zombieStop = document.querySelector(".zombieStop");
     const hand = document.querySelector(".hand");
@@ -100,6 +115,7 @@ const Hero = () => {
         <img className="moto" src="moto.gif" alt="moto" />
         <img className="car" src="car.gif" alt="car" />
         <img className="background" src="front.png" alt="front" />
+        <div className="flash-overlay" id="flashOverlay"></div>
       </div>
     </>
   );
