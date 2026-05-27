@@ -54,6 +54,10 @@ const Hero = () => {
     hand.style.left = `${x - 8}vw`;
     hand.style.top = `${y - 70}vh`;
 
+    hand.classList.remove("unSmash");
+    hand.style.animation = "none";
+    void hand.offsetWidth;
+    hand.style.animation = "";
     hand.classList.remove("hidden");
     hand.classList.add("smash");
     zombieStop.classList.remove("hidden");
@@ -71,6 +75,31 @@ const Hero = () => {
         hand.classList.add("hidden");
       }, 1300);
     }, 5000);
+
+    setTimeout(() => {
+      zombie.classList.remove("hidden");
+      zombie.style.animation = "none";
+      void zombie.offsetWidth;
+      zombie.style.animation = "";
+      zombie.style.animationPlayState = "running";
+
+      zombieStop.classList.add("hidden");
+      zombieStop.classList.remove("hiddenLight");
+      zombieStop.style.animation = "none";
+      void zombieStop.offsetWidth;
+      zombieStop.style.animation = "";
+      zombieStop.style.animationPlayState = "running";
+
+      puntito.classList.remove("unClickable");
+      puntito.style.animation = "none";
+      void puntito.offsetWidth;
+      puntito.style.animation = "";
+      puntito.style.animationPlayState = "running";
+
+      hand.classList.remove("unSmash");
+      hand.classList.add("hidden");
+      hand.style.animation = "";
+    }, 15000);
   };
 
   return (
