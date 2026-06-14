@@ -1,9 +1,11 @@
 import React from "react";
+import Stars from "../parts/Stars";
 import "../css/card.css";
 
 const Card = ({ title, information, preview, code, image }) => {
   return (
     <div className="card">
+      <Stars count={15} topRange={100} />
       {title && <h1 className="title">{title}</h1>}
       <div className="content">
         {image && <img className="image" src={image} alt={title} />}

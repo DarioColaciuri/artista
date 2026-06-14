@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Stars from "./Stars";
 import "../css/hero.css";
 
 const Hero = () => {
@@ -106,6 +107,7 @@ const Hero = () => {
     <>
       <div id="hero" className="hero">
         <img className="background" src="background.png" alt="background" />
+        <Stars />
         <img className="background" src="houses.png" alt="houses" />
         <img className="background" src="luzfija.png" alt="luzfija" />
         <img className="background" src="road.png" alt="road" />
