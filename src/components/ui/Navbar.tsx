@@ -1,7 +1,10 @@
-import React from "react";
 import "../css/navbar.css";
 
-const Navbar = ({ isBackdrop }) => {
+interface NavbarProps {
+  isBackdrop: boolean;
+}
+
+const Navbar = ({ isBackdrop }: NavbarProps) => {
   return (
     <nav className={`navbar ${isBackdrop ? "backdrop" : ""}`}>
       <h1 className="home">

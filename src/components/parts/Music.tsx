@@ -1,24 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../css/music.css";
+import data from "../../data/tracks.json";
+import type { TracksData } from "../../types";
 
-const TRACKS = [
-  {
-    id: "1gqPMYBWUPQbsG2Pg7NYCa",
-    title: "Huellas",
-  },
-  {
-    id: "4Q9ZH2n2QotrBhgJeB99UU",
-    title: "Cicatrices",
-  },
-  {
-    id: "0WKHXPVrZ9LQymAR5lr5fG",
-    title: "Destino",
-  },
-];
+const { tracks, playlistId } = data as TracksData;
 
 const Music = () => {
-  const [isVisible, setIsVisible] = React.useState(false);
-  const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -45,7 +34,7 @@ const Music = () => {
 
       <div className="marquee">
         <div className="marquee-track">
-          {[...TRACKS, ...TRACKS].map((track, i) => (
+          {[...tracks, ...tracks].map((track, i) => (
             <div key={`${track.id}-${i}`} className="marquee-item">
               <iframe
                 title={track.title}
@@ -65,7 +54,7 @@ const Music = () => {
         <div className="playlist-embed">
           <iframe
             title="Playlist de colaboraciones"
-            src={`https://open.spotify.com/embed/playlist/7oS4H6tQ9K1Tp7FitQCjgK?utm_source=generator&theme=0`}
+            src={`https://open.spotify.com/embed/playlist/${playlistId}?utm_source=generator&theme=0`}
             width="100%"
             height="352"
             allow="encrypted-media"

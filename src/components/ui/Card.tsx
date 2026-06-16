@@ -1,8 +1,15 @@
-import React from "react";
 import Stars from "../parts/Stars";
 import "../css/card.css";
 
-const Card = ({ title, information, preview, code, image }) => {
+interface CardProps {
+  title: string;
+  information: string;
+  preview: string | null;
+  code: string;
+  image: string;
+}
+
+const Card = ({ title, information, preview, code, image }: CardProps) => {
   return (
     <div className="card">
       <Stars count={15} topRange={100} />

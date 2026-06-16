@@ -1,7 +1,12 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import "../css/stars.css";
 
-const Stars = ({ count = 70, topRange = 55 }) => {
+interface StarsProps {
+  count?: number;
+  topRange?: number;
+}
+
+const Stars = ({ count = 70, topRange = 55 }: StarsProps) => {
   const stars = useMemo(
     () =>
       Array.from({ length: count }, (_, i) => ({

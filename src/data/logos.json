@@ -1,0 +1,18 @@
+[
+  { "title": "React", "src": "/logos/logo_react.svg" },
+  { "title": "Next", "src": "/logos/logo_next.svg" },
+  { "title": "JavaScript", "src": "/logos/logo_js.svg" },
+  { "title": "TypeScript", "src": "/logos/logo_ts.svg" },
+  { "title": "HTML", "src": "/logos/logo_html.svg" },
+  { "title": "CSS", "src": "/logos/logo_css.svg" },
+  { "title": "Node", "src": "/logos/logo_node.svg" },
+  { "title": "Firebase", "src": "/logos/logo_firebase.svg" },
+  { "title": "Git", "src": "/logos/logo_git.svg" },
+  { "title": "Tailwind", "src": "/logos/logo_tailwind.svg" },
+  { "title": "Bootstrap", "src": "/logos/logo_bootstrap.svg" },
+  { "title": "Sass", "src": "/logos/logo_sass.svg" },
+  { "title": "After Effects", "src": "/logos/logo_after.svg" },
+  { "title": "Illustrator", "src": "/logos/logo_illustrator.svg" },
+  { "title": "Photoshop", "src": "/logos/logo_ps.svg" },
+  { "title": "Ableton Live", "src": "/logos/logo_ableton.svg" }
+]

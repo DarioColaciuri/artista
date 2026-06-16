@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "../css/about.css";
@@ -6,10 +6,10 @@ import "../css/about.css";
 gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
-  const sectionRef = useRef(null);
-  const photoRef = useRef(null);
-  const textRef = useRef(null);
-  const linksRef = useRef(null);
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const photoRef = useRef<HTMLImageElement | null>(null);
+  const textRef = useRef<HTMLParagraphElement | null>(null);
+  const linksRef = useRef<HTMLUListElement | null>(null);
 
   useEffect(() => {
     if (!sectionRef.current) return;
@@ -96,7 +96,7 @@ const About = () => {
 
   return (
     <div id="about" className="about" ref={sectionRef}>
-      <img ref={photoRef} className="photo" src="cara.jpg" alt="Dario Colaciuri" />
+      <img ref={photoRef} className="photo" src="/images/cara.jpg" alt="Dario Colaciuri" />
       <p ref={textRef} className="text">
         My name is <strong>Dario Colaciuri</strong> and I'm a{" "}
         <strong>frontend developer.</strong>
@@ -144,7 +144,7 @@ const About = () => {
           rel="noopener noreferrer"
           target="_blank"
           title="Resume"
-          href="dariocolaciuri_resume.pdf"
+          href="/docs/dariocolaciuri_resume.pdf"
         >
           <i className="bi bi-file-earmark-person"></i>
         </a>
