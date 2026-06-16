@@ -1,78 +1,85 @@
 [
   {
+    "title": "MMO RPG",
+    "image": "/images/rpg.gif",
+    "information": "A multiplayer RPG built with Phaser 3, WebSocket, and Supabase. Players join the same world and interact in real time. Currently under construction.",
+    "preview": null,
+    "code": "https://github.com/DarioColaciuri/rpg"
+  },
+  {
     "title": "Federico Liberati",
     "image": "/images/federico.gif",
-    "information": "This project involved creating a website for an architect. The client provided the design, and we collaborated to build it step by step. The previous site, built with different technologies, suffered from very slow load times. To solve this, I decided to rebuild it from the ground up using ASTRO, which is one of the most performance-oriented frameworks for static websites with minimal user interaction.",
+    "information": "A website for an architect rebuilt from scratch with ASTRO to solve slow load times. The client provided the design and we collaborated step by step.",
     "preview": "https://www.federico-liberati.com/",
     "code": "https://github.com/DarioColaciuri/federicoliberati"
   },
   {
     "title": "Arpeggio Machine",
     "image": "/images/arpeggio.gif",
-    "information": "This arpeggio simulator for guitar is built entirely with vanilla JavaScript. It was created to help my students visualize different ways to navigate the guitar fretboard. The simulator includes a note selector and an arpeggio type selector, and by combining both, it displays all possible patterns on the instrument.",
+    "information": "A guitar arpeggio simulator built with vanilla JavaScript. Created to help students visualize fretboard navigation, combining note and arpeggio type selectors to display patterns on the instrument.",
     "preview": "https://dariocolaciuri.github.io/arpeggio-machine/",
     "code": "https://github.com/DarioColaciuri/arpeggio-machine"
   },
   {
     "title": "Platformer Game",
     "image": "/images/platformer.gif",
-    "information": "This is a game I built to experiment with the HTML Canvas. It was developed entirely with vanilla JavaScript and includes basic mechanics like walking, jumping, colliding with walls, and entering doors to progress to the next level. Level transitions were created using GSAP, a popular library for animations and transitions.",
+    "information": "A platformer built with vanilla JavaScript and HTML Canvas. Includes walking, jumping, wall collisions, and door-based level progression, with GSAP-powered transitions.",
     "preview": "https://dariocolaciuri.github.io/platformer-game/",
     "code": "https://github.com/DarioColaciuri/platformer-game"
   },
   {
     "title": "Ecommerce Backend",
     "image": "/images/backend.gif",
-    "information": "This project was a practice to learn how to use EXPRESS and MongoDB on the backend. User authentication was implemented along with BCRYPT to encrypt sensitive information. A layered architecture was used for enhanced security. The project also includes an email messaging system using NODEMAILER, file upload functionality with MULTER, and role-based access control. An admin panel was created to manage actions that regular users cannot perform.",
+    "information": "A backend practice project using Express and MongoDB. Features user authentication with Bcrypt, Nodemailer for email, Multer for file uploads, and role-based access control with an admin panel.",
     "preview": null,
     "code": "https://github.com/DarioColaciuri/backend"
   },
   {
     "title": "Random Book",
     "image": "/images/randombook.gif",
-    "information": "This was an organizer I created to distribute tasks while we were working on a sheet music book. It was built with React and Firebase. The app includes full CRUD functionality to add, edit, and delete items. I also implemented an action history (tracking only the most relevant actions) and a leaderboard to show who had completed the most tasks.",
+    "information": "A task organizer for a sheet music book project, built with React and Firebase. Features full CRUD, action history tracking, and a leaderboard for completed tasks.",
     "preview": "https://randombook.vercel.app/",
     "code": "https://github.com/DarioColaciuri/randombook"
   },
   {
     "title": "Password Changer",
     "image": "/images/password.gif",
-    "information": "This is a very simple application built solely with JavaScript. One day, I woke up from a dream where I created an app that would take an insecure password and return a more complex one. So, I decided to make it. It's a simple concept, but it works!",
+    "information": "A simple JavaScript app that transforms weak passwords into stronger ones. Born from a dream and turned into a working tool.",
     "preview": "https://dariocolaciuri.github.io/password-changer/",
     "code": "https://github.com/DarioColaciuri/password-changer"
   },
   {
     "title": "Liszt",
     "image": "/images/liszt.gif",
-    "information": "This is a project that is not yet finished. The idea was to create a task manager that allows users to share tasks with one another. I implemented user authentication, task CRUD functionality, and the ability to share tasks with other users. However, as I mentioned, it's still a work in progress, both in terms of aesthetics and functionality.",
+    "information": "A task manager with shared tasks between users, built with authentication and full CRUD. Still a work in progress, both visually and functionally.",
     "preview": "https://liszt-two.vercel.app/",
     "code": "https://github.com/DarioColaciuri/Liszt"
   },
   {
     "title": "Next Ecommerce",
     "image": "/images/next.gif",
-    "information": "This is an eCommerce platform built with NEXT.js. Honestly, I didn't focus much on the visual aspects because I was primarily investigating how server-side rendering works and experimenting with Tailwind (CSS library). I also explored creating an API within Next.js, but that portion is commented out in the code since I decided to use Firebase to save time.",
+    "information": "An eCommerce platform built with Next.js to explore server-side rendering and Tailwind. Uses Firebase for the backend to speed up development.",
     "preview": "https://next-ecommerce-2g86ccfx4-dariocolaciuris-projects.vercel.app/",
     "code": "https://github.com/DarioColaciuri/next-ecommerce"
   },
   {
     "title": "Auditroim",
     "image": "/images/auditroim.gif",
-    "information": "This time, I decided to create an eCommerce platform with React. It features user registration, the ability to add products to a shopping cart, save products as favorites, and complete purchases. After making a purchase, users can review their order history.",
+    "information": "A full eCommerce platform built with React. Features user registration, shopping cart, favorites, checkout flow, and order history.",
     "preview": "https://auditroim.vercel.app/",
     "code": "https://github.com/DarioColaciuri/AudiTroim"
   },
   {
     "title": "Audio-max",
     "image": "/images/audiomax.gif",
-    "information": "This was my first experience with JavaScript. I created a simple eCommerce platform where users can add or remove products from the shopping cart (using localStorage). It's not very functional, but it holds a special place as a memorable project.",
+    "information": "My first JavaScript project: a simple eCommerce with cart functionality using localStorage. Simple but where everything started.",
     "preview": "https://dariocolaciuri.github.io/audio-max/",
     "code": "https://github.com/DarioColaciuri/audio-max"
   },
   {
     "title": "First Web",
     "image": "/images/first.gif",
-    "information": "This was my very first website. The design serves as the foundation for the portfolio you are currently exploring. I found it quite poetic to use a similar design to what I created for the first time in the world of HTML and CSS.",
+    "information": "My very first website. Its design became the foundation for this portfolio — a poetic full-circle moment with HTML and CSS.",
     "preview": "https://dariocolaciuri.github.io/darioColaciuri/",
     "code": "https://github.com/DarioColaciuri/darioColaciuri"
   }
