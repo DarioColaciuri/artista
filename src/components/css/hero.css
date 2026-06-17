@@ -220,6 +220,20 @@
   .background {
     object-fit: cover;
   }
+
+  .walker,
+  .zombie,
+  .zombieStop,
+  .runner,
+  .car,
+  .moto,
+  .hand {
+    width: 175vw;
+  }
+
+  .puntito {
+    left: 2vw;
+  }
 }
 
 /* @media (max-width: 600px) {

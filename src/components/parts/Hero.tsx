@@ -49,6 +49,7 @@ const Hero = () => {
 
     if (!zombie || !zombieStop || !hand || !puntito) return;
 
+    const isMobile = window.innerWidth <= 900;
     const x = (event.clientX / window.innerWidth) * 100;
     const y = 70;
 
@@ -56,7 +57,8 @@ const Hero = () => {
     zombieStop.style.animationPlayState = "paused";
     puntito.style.animationPlayState = "paused";
 
-    hand.style.left = `${x - 8}vw`;
+    const handOffset = isMobile ? 14 : 8;
+    hand.style.left = `${x - handOffset}vw`;
     hand.style.top = `${y - 70}vh`;
 
     hand.classList.remove("unSmash");
