@@ -1,8 +1,10 @@
 import { useEffect, useRef } from "react";
+import { useTheme } from "../../context/ThemeContext";
 import Stars from "./Stars";
 import "../css/hero.css";
 
 const Hero = () => {
+  const { isLight } = useTheme();
   useEffect(() => {
     const lights = ["luz1", "luz2", "luz3", "luz4"];
 
@@ -151,7 +153,16 @@ const Hero = () => {
         <img className="hand hidden" src="/images/hand.png" alt="hand" />
         <img className="moto" src="/images/moto.gif" alt="moto" />
         <img className="car" src="/images/car.gif" alt="car" />
-        <img className="background" src="/images/front.png" alt="front" />
+        <img
+          className={`background ${isLight ? "fade-out" : "fade-in"}`}
+          src="/images/front.png"
+          alt="front"
+        />
+        <img
+          className={`background ${isLight ? "fade-in" : "fade-out"}`}
+          src="/images/front_day.png"
+          alt="front day"
+        />
         <div className="flash-overlay" id="flashOverlay"></div>
       </div>
     </>

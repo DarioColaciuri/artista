@@ -1,10 +1,13 @@
 import "../css/navbar.css";
+import { useTheme } from "../../context/ThemeContext";
 
 interface NavbarProps {
   isBackdrop: boolean;
 }
 
 const Navbar = ({ isBackdrop }: NavbarProps) => {
+  const { isLight, toggleTheme } = useTheme();
+
   return (
     <nav className={`navbar ${isBackdrop ? "backdrop" : ""}`}>
       <h1 className="home">
@@ -24,6 +27,14 @@ const Navbar = ({ isBackdrop }: NavbarProps) => {
           <a href="#about">about</a>
         </li>
       </ul>
+      <button
+        className="theme-toggle"
+        onClick={toggleTheme}
+        aria-label={isLight ? "Switch to dark mode" : "Switch to light mode"}
+        title={isLight ? "Dark mode" : "Light mode"}
+      >
+        {isLight ? "🌙" : "☀️"}
+      </button>
     </nav>
   );
 };

@@ -5,7 +5,7 @@
   justify-content: center;
   width: 100dvw;
   flex-wrap: wrap;
-  color: white;
+  color: var(--text-heading);
   font-family: "Major Mono Display", monospace;
   margin-top: 2rem;
 }
@@ -14,11 +14,11 @@
   width: 30rem;
   border-radius: 50rem;
   transition: box-shadow 0.5s;
-  box-shadow: 0 0 24px rgba(255, 255, 255, 0.03);
+  box-shadow: var(--photo-shadow);
 }
 
 .photo:hover {
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  box-shadow: var(--photo-shadow-hover);
   transform: scale(1.02);
 }
 
@@ -45,28 +45,20 @@
   width: 3.2rem;
   height: 3.2rem;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-  color: white;
+  background: var(--social-bg);
+  color: var(--text-heading);
   text-decoration: none;
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .links a:hover {
-  background: rgba(255, 255, 255, 0.16);
+  background: var(--social-bg-hover);
   transform: scale(1.12);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px var(--social-glow-hover);
 }
 
 @media (max-width: 900px) {
-  .photo {
-    width: 20rem;
-  }
-
-  .text {
-    width: 20rem;
-  }
-
-  .links {
-    margin-left: -3rem;
-  }
+  .photo { width: 20rem; }
+  .text { width: 20rem; }
+  .links { margin-left: -3rem; }
 }

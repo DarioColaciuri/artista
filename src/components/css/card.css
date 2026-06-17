@@ -4,25 +4,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(20, 22, 40, 0.85);
+  background: var(--card-bg);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  color: white;
+  color: var(--text-heading);
   padding: 1.5rem;
   width: 30rem;
   height: 36rem;
   border-radius: 2rem;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 60px rgba(15, 15, 35, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-top: 1px solid rgba(120, 140, 180, 0.2);
-  transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--card-border);
+  border-top: 1px solid var(--card-border-top);
+  transition: background 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
 }
 
 .card:hover {
-  background: rgba(30, 32, 55, 0.9);
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6), 0 0 32px rgba(60, 70, 120, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  background: var(--card-bg-hover);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .content {
@@ -47,7 +48,7 @@
 
 .content p {
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-secondary);
   display: -webkit-box;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
@@ -68,34 +69,22 @@
   width: 2.8rem;
   height: 2.8rem;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--btn-bg);
   font-size: 1.4rem;
-  color: white;
+  color: var(--text-heading);
   text-decoration: none;
   transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .buttons a:hover {
-  background: rgba(120, 140, 200, 0.15);
+  background: var(--btn-bg-hover);
   transform: scale(1.1);
   box-shadow: 0 0 16px rgba(100, 130, 200, 0.12);
 }
 
 @media (max-width: 900px) {
-  .card {
-    width: 60vw;
-  }
-
-  .content {
-    width: 60vw;
-    text-align: center;
-  }
-
-  .image {
-    width: 60vw;
-  }
-
-  .title {
-    font-size: 1rem;
-  }
+  .card { width: 60vw; }
+  .content { width: 60vw; text-align: center; }
+  .image { width: 60vw; }
+  .title { font-size: 1rem; }
 }

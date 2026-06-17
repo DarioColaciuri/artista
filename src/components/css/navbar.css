@@ -33,7 +33,25 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--text-heading);
+  transition: color 1.4s ease-in-out;
+}
+
+.theme-toggle {
+  margin-right: 3rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--btn-border);
+  border-radius: 6px;
+  background: var(--btn-bg);
+  color: var(--text-heading);
+  font-size: 1.1rem;
+  cursor: pointer;
+  line-height: 1;
+  transition: background 0.3s ease, color 1.4s ease-in-out, border-color 1.4s ease-in-out;
+}
+
+.theme-toggle:hover {
+  background: var(--btn-bg-hover);
 }
 
 @media (max-width: 900px) {

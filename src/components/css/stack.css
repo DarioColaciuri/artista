@@ -6,11 +6,9 @@
   width: 80vw;
   flex-wrap: wrap;
   box-sizing: border-box;
-
   margin: 0 auto;
   padding: 0;
-  flex-wrap: wrap;
-  color: #ffffff;
+  color: var(--text-heading);
   margin-top: 10rem;
   padding: 5rem;
 }
@@ -30,10 +28,9 @@
 
 .logo:hover {
   transform: scale(1.15);
-  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.25));
+  filter: var(--logo-glow);
 }
 
 @media (max-width: 900px) {
-  .stack {
-  }
+  .stack { }
 }

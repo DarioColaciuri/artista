@@ -1,4 +1,6 @@
 import { useEffect, useState, lazy, Suspense } from "react";
+import { ThemeProvider } from "./context/ThemeContext";
+import ThemeBackground from "./components/ui/ThemeBackground";
 import Hero from "./components/parts/Hero";
 import Navbar from "./components/ui/Navbar";
 
@@ -26,7 +28,8 @@ function App() {
   }, []);
 
   return (
-    <>
+    <ThemeProvider>
+      <ThemeBackground />
       <Navbar isBackdrop={isBackdrop} />
       <Hero />
       <Suspense fallback={<SectionFallback />}>
@@ -41,7 +44,7 @@ function App() {
       <Suspense fallback={<SectionFallback />}>
         <About />
       </Suspense>
-    </>
+    </ThemeProvider>
   );
 }
 

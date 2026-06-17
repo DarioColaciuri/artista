@@ -15,6 +15,15 @@
   height: 100lvh;
   width: 100vw;
   pointer-events: none;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
 }
 
 .walker {
