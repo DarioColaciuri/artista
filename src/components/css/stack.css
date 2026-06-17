@@ -5,8 +5,9 @@
   justify-content: center;
   width: 80vw;
   flex-wrap: wrap;
+  box-sizing: border-box;
 
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   flex-wrap: wrap;
   color: #ffffff;
@@ -34,6 +35,5 @@
 
 @media (max-width: 900px) {
   .stack {
-    margin-left: -3rem;
   }
 }
