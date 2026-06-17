@@ -1,10 +1,24 @@
 [
   {
+    "title": "Hand Music",
+    "image": "/images/hands.webm",
+    "information": "An experimental music app that tracks hand gestures through the camera. Right hand sets the note via finger positions, left hand selects chord types and effects, with multiple synth sounds.",
+    "preview": "https://dariocolaciuri.github.io/hands/",
+    "code": "https://github.com/DarioColaciuri/hands"
+  },
+  {
     "title": "MMO RPG",
     "image": "/images/rpg.webm",
     "information": "A multiplayer RPG built with Phaser 3, WebSocket, and Supabase. Players join the same world and interact in real time. Currently under construction.",
     "preview": null,
     "code": "https://github.com/DarioColaciuri/rpg"
+  },
+  {
+    "title": "The Random Book",
+    "image": "/images/randombooklanding.webm",
+    "information": "Landing page for a collaborative songbook made with friends. Features a Randomizer that picks a random song at the press of a button. Built with React.",
+    "preview": "https://randombookargentina.com/",
+    "code": "https://github.com/DarioColaciuri/therandombook"
   },
   {
     "title": "Federico Liberati",
