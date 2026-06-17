@@ -15,7 +15,13 @@ const Card = ({ title, information, preview, code, image }: CardProps) => {
       <Stars count={15} topRange={100} />
       {title && <h1 className="title">{title}</h1>}
       <div className="content">
-        {image && <img className="image" src={image} alt={title} />}
+        {image && (
+          image.endsWith(".webm") ? (
+            <video className="image" src={image} autoPlay loop muted playsInline />
+          ) : (
+            <img className="image" src={image} alt={title} />
+          )
+        )}
         {information && <p>{information}</p>}
         <div className="buttons">
           {preview && (

@@ -1,84 +1,84 @@
 [
   {
     "title": "MMO RPG",
-    "image": "/images/rpg.gif",
+    "image": "/images/rpg.webm",
     "information": "A multiplayer RPG built with Phaser 3, WebSocket, and Supabase. Players join the same world and interact in real time. Currently under construction.",
     "preview": null,
     "code": "https://github.com/DarioColaciuri/rpg"
   },
   {
     "title": "Federico Liberati",
-    "image": "/images/federico.gif",
+    "image": "/images/federico.webm",
     "information": "A website for an architect rebuilt from scratch with ASTRO to solve slow load times. The client provided the design and we collaborated step by step.",
     "preview": "https://www.federico-liberati.com/",
     "code": "https://github.com/DarioColaciuri/federicoliberati"
   },
   {
     "title": "Arpeggio Machine",
-    "image": "/images/arpeggio.gif",
+    "image": "/images/arpeggio.webm",
     "information": "A guitar arpeggio simulator built with vanilla JavaScript. Created to help students visualize fretboard navigation, combining note and arpeggio type selectors to display patterns on the instrument.",
     "preview": "https://dariocolaciuri.github.io/arpeggio-machine/",
     "code": "https://github.com/DarioColaciuri/arpeggio-machine"
   },
   {
     "title": "Platformer Game",
-    "image": "/images/platformer.gif",
+    "image": "/images/platformer.webm",
     "information": "A platformer built with vanilla JavaScript and HTML Canvas. Includes walking, jumping, wall collisions, and door-based level progression, with GSAP-powered transitions.",
     "preview": "https://dariocolaciuri.github.io/platformer-game/",
     "code": "https://github.com/DarioColaciuri/platformer-game"
   },
   {
     "title": "Ecommerce Backend",
-    "image": "/images/backend.gif",
+    "image": "/images/backend.webm",
     "information": "A backend practice project using Express and MongoDB. Features user authentication with Bcrypt, Nodemailer for email, Multer for file uploads, and role-based access control with an admin panel.",
     "preview": null,
     "code": "https://github.com/DarioColaciuri/backend"
   },
   {
     "title": "Random Book",
-    "image": "/images/randombook.gif",
+    "image": "/images/randombook.webm",
     "information": "A task organizer for a sheet music book project, built with React and Firebase. Features full CRUD, action history tracking, and a leaderboard for completed tasks.",
     "preview": "https://randombook.vercel.app/",
     "code": "https://github.com/DarioColaciuri/randombook"
   },
   {
     "title": "Password Changer",
-    "image": "/images/password.gif",
+    "image": "/images/password.webm",
     "information": "A simple JavaScript app that transforms weak passwords into stronger ones. Born from a dream and turned into a working tool.",
     "preview": "https://dariocolaciuri.github.io/password-changer/",
     "code": "https://github.com/DarioColaciuri/password-changer"
   },
   {
     "title": "Liszt",
-    "image": "/images/liszt.gif",
+    "image": "/images/liszt.webm",
     "information": "A task manager with shared tasks between users, built with authentication and full CRUD. Still a work in progress, both visually and functionally.",
     "preview": "https://liszt-two.vercel.app/",
     "code": "https://github.com/DarioColaciuri/Liszt"
   },
   {
     "title": "Next Ecommerce",
-    "image": "/images/next.gif",
+    "image": "/images/next.webm",
     "information": "An eCommerce platform built with Next.js to explore server-side rendering and Tailwind. Uses Firebase for the backend to speed up development.",
     "preview": "https://next-ecommerce-2g86ccfx4-dariocolaciuris-projects.vercel.app/",
     "code": "https://github.com/DarioColaciuri/next-ecommerce"
   },
   {
     "title": "Auditroim",
-    "image": "/images/auditroim.gif",
+    "image": "/images/auditroim.webm",
     "information": "A full eCommerce platform built with React. Features user registration, shopping cart, favorites, checkout flow, and order history.",
     "preview": "https://auditroim.vercel.app/",
     "code": "https://github.com/DarioColaciuri/AudiTroim"
   },
   {
     "title": "Audio-max",
-    "image": "/images/audiomax.gif",
+    "image": "/images/audiomax.webm",
     "information": "My first JavaScript project: a simple eCommerce with cart functionality using localStorage. Simple but where everything started.",
     "preview": "https://dariocolaciuri.github.io/audio-max/",
     "code": "https://github.com/DarioColaciuri/audio-max"
   },
   {
     "title": "First Web",
-    "image": "/images/first.gif",
+    "image": "/images/first.webm",
     "information": "My very first website. Its design became the foundation for this portfolio — a poetic full-circle moment with HTML and CSS.",
     "preview": "https://dariocolaciuri.github.io/darioColaciuri/",
     "code": "https://github.com/DarioColaciuri/darioColaciuri"
