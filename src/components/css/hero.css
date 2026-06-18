@@ -257,6 +257,15 @@
   filter: invert(1) brightness(0.4) sepia(1) hue-rotate(190deg) saturate(1.2) brightness(1.1);
 }
 
+.light #luz1,
+.light #luz2,
+.light #luz3,
+.light #luz4,
+.light #luzfija {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
 /* @media (max-width: 600px) {
   .hero {
     overflow-x: hidden;

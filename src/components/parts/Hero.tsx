@@ -117,7 +117,7 @@ const Hero = () => {
         <img className="background" src="/images/background.png" alt="background" />
         <Stars />
         <img className="background" src="/images/houses.png" alt="houses" />
-        <img className="background" src="/images/luzfija.png" alt="luzfija" />
+        <img className="background" src="/images/luzfija.png" alt="luzfija" id="luzfija" />
         <img className="background" src="/images/road.png" alt="road" />
 
         <img
