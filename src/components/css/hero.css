@@ -34,6 +34,7 @@
   width: 100vw;
   animation: moveAcrossScreen 45s linear infinite;
   pointer-events: none;
+  transition: filter 1.4s ease-in-out;
 }
 
 .zombie {
@@ -44,6 +45,7 @@
   width: 100vw;
   animation: moveAcrossScreenZombie 85s linear infinite;
   pointer-events: none;
+  transition: filter 1.4s ease-in-out;
 }
 
 .zombieStop {
@@ -95,6 +97,7 @@
   width: 100vw;
   animation: moveAcrossScreenCar 20s linear infinite;
   pointer-events: none;
+  transition: filter 1.4s ease-in-out;
 }
 
 .moto {
@@ -105,6 +108,7 @@
   width: 100vw;
   animation: moveAcrossScreenMoto 15s linear infinite;
   pointer-events: none;
+  transition: filter 1.4s ease-in-out;
 }
 
 .runner {
@@ -115,6 +119,7 @@
   width: 100vw;
   animation: moveAcrossScreenRunner 35s linear infinite;
   pointer-events: none;
+  transition: filter 1.4s ease-in-out;
 }
 
 .hiddenLight {
@@ -243,6 +248,13 @@
   .puntito {
     left: 2vw;
   }
+}
+
+.light .walker,
+.light .runner,
+.light .moto,
+.light .car {
+  filter: invert(1) brightness(0.4) sepia(1) hue-rotate(190deg) saturate(1.2) brightness(1.1);
 }
 
 /* @media (max-width: 600px) {

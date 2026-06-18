@@ -57,34 +57,34 @@
 .light {
   color-scheme: light;
 
-  --text-primary: rgba(24, 24, 35, 0.87);
-  --text-secondary: rgba(35, 35, 50, 0.78);
-  --text-heading: #1a1a2e;
-  --text-muted: rgba(40, 40, 55, 0.55);
+  --text-primary: rgba(255, 255, 255, 0.87);
+  --text-secondary: rgba(255, 255, 255, 0.75);
+  --text-heading: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.5);
 
-  --btn-bg: rgba(0, 0, 0, 0.06);
-  --btn-bg-hover: rgba(0, 0, 0, 0.12);
-  --btn-border: rgba(0, 0, 0, 0.18);
+  --btn-bg: rgba(255, 255, 255, 0.08);
+  --btn-bg-hover: rgba(255, 255, 255, 0.16);
+  --btn-border: rgba(255, 255, 255, 0.15);
 
-  --social-bg: rgba(0, 0, 0, 0.06);
-  --social-bg-hover: rgba(0, 0, 0, 0.12);
-  --social-glow: rgba(0, 0, 0, 0.06);
-  --social-glow-hover: rgba(0, 0, 0, 0.14);
+  --social-bg: rgba(255, 255, 255, 0.06);
+  --social-bg-hover: rgba(255, 255, 255, 0.14);
+  --social-glow: rgba(255, 255, 255, 0.08);
+  --social-glow-hover: rgba(255, 255, 255, 0.18);
 
-  --card-bg: rgba(255, 255, 255, 0.78);
-  --card-bg-hover: rgba(255, 255, 255, 0.92);
-  --card-border: rgba(0, 0, 0, 0.08);
-  --card-border-top: rgba(100, 130, 170, 0.22);
-  --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  --card-shadow-hover: 0 12px 48px rgba(0, 0, 0, 0.07),
-    0 0 32px rgba(80, 120, 170, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  --card-bg: rgba(25, 45, 80, 0.8);
+  --card-bg-hover: rgba(35, 55, 95, 0.88);
+  --card-border: rgba(255, 255, 255, 0.06);
+  --card-border-top: rgba(120, 160, 210, 0.2);
+  --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  --card-shadow-hover: 0 12px 48px rgba(0, 0, 0, 0.35),
+    0 0 32px rgba(60, 100, 160, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
 
-  --photo-shadow: 0 0 24px rgba(0, 0, 0, 0.06);
-  --photo-shadow-hover: 0 0 40px rgba(0, 0, 0, 0.12);
+  --photo-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+  --photo-shadow-hover: 0 0 40px rgba(0, 0, 0, 0.25);
 
-  --logo-glow: drop-shadow(0 0 12px rgba(0, 0, 0, 0.12));
+  --logo-glow: drop-shadow(0 0 12px rgba(255, 255, 255, 0.2));
 
   --star-opacity: 0;
 }
@@ -129,10 +129,10 @@ body::before {
   padding-top: 2rem;
   background: linear-gradient(
     180deg,
-    #e8e4db 0%,
-    #e0dcd6 30%,
-    #d8d4ce 60%,
-    #d0ccc4 100%
+    #2a4a7a 0%,
+    #223e6e 30%,
+    #1a325c 60%,
+    #12264a 100%
   );
 }
 
