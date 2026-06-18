@@ -32,18 +32,20 @@ function App() {
       <ThemeBackground />
       <Navbar isBackdrop={isBackdrop} />
       <Hero />
-      <Suspense fallback={<SectionFallback />}>
-        <Projects />
-      </Suspense>
-      <Suspense fallback={<SectionFallback />}>
-        <Stack />
-      </Suspense>
-      <Suspense fallback={<SectionFallback />}>
-        <Music />
-      </Suspense>
-      <Suspense fallback={<SectionFallback />}>
-        <About />
-      </Suspense>
+      <div className="content-wrapper">
+        <Suspense fallback={<SectionFallback />}>
+          <Projects />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <Stack />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <Music />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <About />
+        </Suspense>
+      </div>
     </ThemeProvider>
   );
 }
